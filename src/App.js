@@ -7,9 +7,13 @@ import SplashScreen from '../src/screens/SplashScreen';
 
 import AsyncStorage from '@react-native-community/async-storage';
 
+import codePush from 'react-native-code-push';
+
+const codePushOptions = {checkFrequence: codePush.CheckFrequenc.ON_APP_RESUME};
+
 YellowBox.ignoreWarnings(['WebSocket', 'componentWillMount']);
 
-export default class App extends React.Component {
+class App extends React.Component {
   state = {
     userId: '',
     isLoading: false,
@@ -62,3 +66,5 @@ export default class App extends React.Component {
     );
   }
 }
+
+export default codePush(codePushOptions)(App);

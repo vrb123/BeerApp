@@ -1,3 +1,4 @@
 <resources>
+	<string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">4vv2nUBcF4TUvkXXpFjsKPb_ZpfV5h8kOuaQj</string>
     <string name="app_name">BeerApp</string>
 </resources>
