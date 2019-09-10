@@ -3,7 +3,10 @@ import {View} from 'react-native';
 
 import EntriesList from '../components/EntriesList';
 
-export default props => {
-  console.log(props.navigation.getParam('entries'));
+const EventEntriesScreen =  props => {
   return <EntriesList entries={props.navigation.getParam('entries')} />;
 };
+
+EventEntriesScreen.navigationOptions = {};
+
+export default EventEntriesScreen;

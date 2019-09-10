@@ -9,7 +9,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 
 import codePush from 'react-native-code-push';
 
-const codePushOptions = {checkFrequence: codePush.CheckFrequenc.ON_APP_RESUME};
+const codePushOptions = {checkFrequence: codePush.CheckFrequency.ON_APP_RESUME};
 
 YellowBox.ignoreWarnings(['WebSocket', 'componentWillMount']);
 
